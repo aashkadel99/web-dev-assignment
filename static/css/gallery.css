@@ -106,3 +106,45 @@ h1, h3{
 .h-3{
     grid-row: span 3;
 }
+
+
+/* mobile */
+@media screen and (max-width: 500px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        font-size: 18px;
+    }
+    .images-container{
+        margin: 0 40px 10px 40px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+        grid-column: span 4;
+    }
+    .h-1,.h-2,.h-3,.h-4,.h-5,.h-6{
+        grid-row: span 1;
+    }
+}
+
+
+/* tablet */
+@media only screen and (max-width: 1200px) and (min-width: 500px){
+    .images-container{
+        margin: 0 40px 10px 40px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+        grid-column: span 1;
+    }
+    .h-1,.h-2,.h-3,.h-4,.h-5,.h-6{
+        grid-row: span 2;
+    }
+
+    .h-1, .h-3, .h-5{
+        grid-row: span 3;
+    }
+}
